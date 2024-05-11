@@ -7,5 +7,7 @@
     grid-row-gap: 3px;
     }
     
-    .box { border:1px solid black;}
+    .box .grid-item { 
+		background-color:rgba(0,0,0,0);
+		border:1px solid black;}
    
