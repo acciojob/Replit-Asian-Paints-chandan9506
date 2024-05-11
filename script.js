@@ -1,20 +1,25 @@
 //your JS code here. If required.
-let input = document.getElementById("input-id");
+let input = document.getElementById("block-id");
 let color = document.getElementById("color-id");
-let btn = document.querySelector("button");
-
+let changeBtn = document.querySelector("#change_button");
+let resetBtn = document.querySelector("#Reset");
 
 let gridElements = document.querySelectorAll(".box");
 
+resetBtn.addEventListener("click" , function resetGrid(e){
+	e.preventDefault();
+	gridElements.forEach(element => {
+		element.style.backgroundColor="white";
+	})
+});
 
 
 
 
-btn.addEventListener("click",function updateGrid(e){
+changeBtn.addEventListener("click",function updateGrid(e){
     e.preventDefault();
     let inputValue = input.value;
     let colorValue = color.value;
-
     gridElements.forEach(element => {
         if(element.id !== inputValue){
             element.style.backgroundColor ="white";
@@ -23,8 +28,4 @@ btn.addEventListener("click",function updateGrid(e){
             element.style.backgroundColor =`${colorValue}`;
         }
     });
-    
-   
-    
-
 });
