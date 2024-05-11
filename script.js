@@ -1,8 +1,8 @@
 //your JS code here. If required.
 let input = document.getElementById("block-id");
-let color = document.getElementById("color-id");
+let color = document.getElementById("colour-id");
 let changeBtn = document.querySelector("#change_button");
-let resetBtn = document.querySelector("#Reset");
+let resetBtn = document.querySelector("#reset_button");
 
 let gridElements = document.querySelectorAll(".box");
 
